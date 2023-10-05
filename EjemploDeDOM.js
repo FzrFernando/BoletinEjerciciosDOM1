@@ -70,3 +70,20 @@ console.log(itemsListaPrimeraForma);
 // Arreglar el siguiente
 // let itemsListaSegundaForma = document.querySelectorAll('ul li.important');
 // console.log(itemsListaSegundaForma);
+
+
+// Ejercicio 2: Acceso a Nodos Relacionados
+
+// 2.1. Utiliza document.querySelector() para obtener el primer párrafo dentro del div con id "lipsum" en tu página web de ejemplo. Imprime el nodo en la consola.
+let primerParrafoLipsum = document.querySelector('div[id="lipsum"] p')
+console.log(primerParrafoLipsum);
+
+// 2.2. Emplea el método nextElementSibling para obtener el siguiente hermano del párrafo obtenido en el ejercicio 2.1. Imprime el nodo en la consola.
+let hermanoSiguiente = primerParrafoLipsum.nextElementSibling;
+console.log(hermanoSiguiente);
+
+// 2.3. Utiliza el método parentElement para obtener el elemento padre del párrafo obtenido en el ejercicio 2.2. Imprime el nodo en la consola.
+let padreParrafo = hermanoSiguiente.parentElement;
+console.log(padreParrafo);
+
+// 2.4. Obtén por consola, al menos de 2 formas diferentes:
