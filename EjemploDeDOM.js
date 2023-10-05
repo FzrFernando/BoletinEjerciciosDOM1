@@ -55,3 +55,18 @@ console.log(todosInputsPrimeraForma);
 
 let todosInputsSegundaForma = document.querySelectorAll("input");
 console.log(todosInputsSegundaForma);
+
+// Sólo los inputs con nombre ‘sexo’
+let sexoPrimeraForma = document.getElementsByName("sexo");
+console.log(sexoPrimeraForma);
+
+let sexoSegundaForma = document.querySelectorAll('input[name="sexo"]');
+console.log(sexoSegundaForma);
+
+// Los items de lista de la clase ‘important’ (sólo los LI)
+let itemsListaPrimeraForma = document.querySelectorAll('li.important');
+console.log(itemsListaPrimeraForma);
+
+// Arreglar el siguiente
+// let itemsListaSegundaForma = document.querySelectorAll('ul li.important');
+// console.log(itemsListaSegundaForma);
